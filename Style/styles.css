@@ -1,0 +1,84 @@
+:root{
+    --bs-primary:rgb(20, 53, 20);
+    --bs-secondary:rgb(136, 80, 108);  
+    --bs-bodyColr:rgb(10, 10, 22);
+    --bs-Typography:rgb(199, 180, 180);
+}
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul div:first-child{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+
+
+
+ul div:first-child div:first-child a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+body section:first-child{
+    background: url('../Assets/img/browser-home-page-banner.jpg');
+    min-height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    padding:30px 20px;
+    
+}
+.second-list li:last-child:hover
+{
+    color: red;
+    padding: 4px;
+    transform: translate3d(2);
+    transition-duration: 0.5;
+    background-color: blue;
+}
+
+/* .animatediv{
+    transform: rotate(360);
+} */
+
+.underheader{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+
+.second-list{
+    display: flex;
+}
+.second-list li{
+    
+    margin: 0 20px;
+    list-style-type: none;
+}
+.second-list li > a{
+    text-decoration: none;
+    
+    color: white;
+}
+
+.centernav{
+    display: flex;
+}
+
+
+
+

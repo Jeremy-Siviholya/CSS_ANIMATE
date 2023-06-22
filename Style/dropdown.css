@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bs-primary:#272727;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    background: var(--bs-primary);
+    width: 90vw;
+    height: 90vh;
+    color: hotpink;
+    font-family: sans-serif;
+    
+    gap: 20px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 20px;
+  
+}
+
+.image{
+    background: url('../Assets/img/home-banner.jpg');
+    background-position: center;
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px white;
+    border-radius: 7px;
+    transition-duration: 300ms;
+    transition-delay: 300ms;
+    transform: translateX(5%)
+}
+
+.image:hover{
+    box-shadow: 5px 5px 5px rgb(53, 216, 153);
+    border-radius: 10px;
+    animation: anim7 2s 1;
+}
+
+@keyframes anim7 {
+    from{
+        transform: translateX(0%)
+    }
+    to{
+        transform: translateX(5%)
+    }
+}
+
+.image:hover .bannertext{
+    margin-top: 210px;
+    transition-delay: 300ms;
+    transition-duration: 300ms;
+}
+.bannertext{
+    background: rgb(85, 77, 77);
+    opacity: .8;
+    margin-top: 245px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 30px;
+}
+
+
+
+h3:hover{
+    background: rgb(132, 25, 165);
+    color:white;
+    transition-duration: 2s;
+    
+}
+.h3{
+    padding: 7px 7px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.drp{
+    
+    display: none;
+   
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.cont:hover  .drp{
+    display: flex;
+    
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 15px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 137px;
+    height: 200px;
+    background: rgb(71, 66, 71);
+    margin-top: 10px;
+    border-radius: 3px;
+    transition-duration: .5s;
+    transition-delay: 500ms;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    color: white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    color: rgb(58, 230, 204);
+    border-bottom: 1px solid hotpink;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
